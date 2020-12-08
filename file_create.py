@@ -46,8 +46,8 @@ data.close()
 #save and load of torch
 import torch
 a = torch.tensor((3,4))
-torch.save(a,'./test/atorch')
-a = torch.load('./test/atorch')
+torch.save(a,'./test/atorch.pth')
+a = torch.load('./test/atorch.pth')
 print(a)
 
 a = open('./test/0.txt','r')
