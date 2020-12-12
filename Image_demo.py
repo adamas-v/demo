@@ -15,6 +15,7 @@ image_splice = transforms.ToPILImage()(image_tensor_splice)
 from matplotlib import pyplot
 
 
+
 pyplot.figure()
 pyplot.subplot(2,2,1)
 pyplot.imshow(image)
@@ -31,5 +32,10 @@ import cv2
 cv2.namedWindow('yes')
 cv2.imshow('yes', image_tensor_splice.transpose(0,2).numpy())#cv2 support H*W*C format
 cv2.waitKey()
+
+#imshow of Image
+image = Image.open('1.png')
+image.show()
+
 
 
